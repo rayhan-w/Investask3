@@ -1,0 +1,497 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    android:background="#F5F5F5"
+    tools:context=".farmer.FarmerAddFarmActivity">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/main"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <!-- Page Title -->
+        <TextView
+            android:id="@+id/pageTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="24dp"
+            android:layout_marginTop="24dp"
+            android:layout_marginEnd="24dp"
+            android:text="Add New Buisness"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:textColor="#2E7D32"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <!-- Farm Type Section -->
+        <TextView
+            android:id="@+id/farmTypeLabel"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="24dp"
+            android:layout_marginTop="24dp"
+            android:layout_marginEnd="24dp"
+            android:text="Buisness Type"
+            android:textStyle="bold"
+            android:textColor="#333333"
+            app:layout_constraintTop_toBottomOf="@id/pageTitle" />
+
+        <Spinner
+            android:id="@+id/farmTypeSpinner"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:layout_marginStart="24dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="24dp"
+            android:background="@drawable/spinner_background"
+            android:padding="8dp"
+            app:layout_constraintTop_toBottomOf="@id/farmTypeLabel" />
+
+        <!-- Farm Details Section -->
+        <TextView
+            android:id="@+id/farmDetailsLabel"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="24dp"
+            android:layout_marginTop="24dp"
+            android:layout_marginEnd="24dp"
+            android:text="Buisness Details"
+            android:textStyle="bold"
+            android:textColor="#333333"
+            app:layout_constraintTop_toBottomOf="@id/farmTypeSpinner" />
+
+        <com.google.android.material.card.MaterialCardView
+            android:id="@+id/farmDetailsCard"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="24dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="24dp"
+            app:cardCornerRadius="8dp"
+            app:cardElevation="2dp"
+            app:layout_constraintTop_toBottomOf="@id/farmDetailsLabel">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="16dp">
+
+                <EditText
+                    android:id="@+id/farmNameEditText"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/edit_text_background"
+                    android:hint="Buisness Name"
+                    android:inputType="text"
+                    android:minHeight="48dp" />
+
+                <EditText
+                    android:id="@+id/farmSizeEditText"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="16dp"
+                    android:background="@drawable/edit_text_background"
+                    android:hint="Buisness Size (acres)"
+                    android:inputType="numberDecimal"
+                    android:minHeight="48dp" />
+
+                <EditText
+                    android:id="@+id/farmAvgEditText"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="16dp"
+                    android:background="@drawable/edit_text_background"
+                    android:hint="Average Income"
+                    android:inputType="number"
+                    android:minHeight="48dp" />
+
+                <EditText
+                    android:id="@+id/farmMinInvestEditText"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="16dp"
+                    android:background="@drawable/edit_text_background"
+                    android:hint="Minimum Investment"
+                    android:inputType="number"
+                    android:minHeight="48dp" />
+
+                <EditText
+                    android:id="@+id/farmCodeNameEditText"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="16dp"
+                    android:background="@drawable/edit_text_background"
+                    android:hint="Buisness Code Name"
+                    android:inputType="text"
+                    android:minHeight="48dp" />
+
+                <EditText
+                    android:id="@+id/farmDescriptionEditText"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="16dp"
+                    android:background="@drawable/edit_text_background"
+                    android:hint="Buisness Description"
+                    android:inputType="textMultiLine"
+                    android:minHeight="96dp"
+                    android:gravity="top" />
+            </LinearLayout>
+        </com.google.android.material.card.MaterialCardView>
+
+        <!-- Owner Information Section -->
+        <TextView
+            android:id="@+id/ownerInfoLabel"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="24dp"
+            android:layout_marginTop="24dp"
+            android:layout_marginEnd="24dp"
+            android:text="Owner Information"
+            android:textStyle="bold"
+            android:textColor="#333333"
+            app:layout_constraintTop_toBottomOf="@id/farmDetailsCard" />
+
+        <com.google.android.material.card.MaterialCardView
+            android:id="@+id/ownerInfoCard"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="24dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="24dp"
+            app:cardCornerRadius="8dp"
+            app:cardElevation="2dp"
+            app:layout_constraintTop_toBottomOf="@id/ownerInfoLabel">
+
+            <EditText
+                android:id="@+id/farmNicNumberEditText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="16dp"
+                android:background="@drawable/edit_text_background"
+                android:hint="Owner NIC Number"
+                android:inputType="text"
+                android:minHeight="48dp" />
+        </com.google.android.material.card.MaterialCardView>
+
+        <!-- Soil Properties Section -->
+        <TextView
+            android:id="@+id/soilPropertiesLabel"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="24dp"
+            android:layout_marginTop="24dp"
+            android:layout_marginEnd="24dp"
+            android:text="Stoke Properties"
+            android:textStyle="bold"
+            android:textColor="#333333"
+            app:layout_constraintTop_toBottomOf="@id/ownerInfoCard" />
+
+        <com.google.android.material.card.MaterialCardView
+            android:id="@+id/soilPropertiesCard"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="24dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="24dp"
+            app:cardCornerRadius="8dp"
+            app:cardElevation="2dp"
+            app:layout_constraintTop_toBottomOf="@id/soilPropertiesLabel">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="16dp">
+
+                <EditText
+                    android:id="@+id/farmSoilPhEditText"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/edit_text_background"
+                    android:hint="Stoke Level"
+                    android:inputType="numberDecimal"
+                    android:minHeight="48dp" />
+
+                <EditText
+                    android:id="@+id/farmSoilMoisturEditText"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="16dp"
+                    android:background="@drawable/edit_text_background"
+                    android:hint="Stoke Content"
+                    android:inputType="numberDecimal"
+                    android:minHeight="48dp" />
+
+                <EditText
+                    android:id="@+id/farmSoilOrganicEditText"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="16dp"
+                    android:background="@drawable/edit_text_background"
+                    android:hint="Stoke Matter"
+                    android:inputType="numberDecimal"
+                    android:minHeight="48dp" />
+
+                <EditText
+                    android:id="@+id/farmSoilNutrientEditText"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="16dp"
+                    android:background="@drawable/edit_text_background"
+                    android:hint="Stoke Level"
+                    android:inputType="numberDecimal"
+                    android:minHeight="48dp" />
+            </LinearLayout>
+        </com.google.android.material.card.MaterialCardView>
+
+        <!-- Location Section -->
+        <TextView
+            android:id="@+id/locationLabel"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="24dp"
+            android:layout_marginTop="24dp"
+            android:layout_marginEnd="24dp"
+            android:text="Buisness Location"
+            android:textStyle="bold"
+            android:textColor="#333333"
+            app:layout_constraintTop_toBottomOf="@id/soilPropertiesCard" />
+
+        <com.google.android.material.card.MaterialCardView
+            android:id="@+id/mapCard"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="24dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="24dp"
+            app:cardCornerRadius="8dp"
+            app:cardElevation="2dp"
+            app:layout_constraintTop_toBottomOf="@id/locationLabel">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <!-- Map Container -->
+                <FrameLayout
+                    android:id="@+id/mapContainer"
+                    android:layout_width="match_parent"
+                    android:layout_height="250dp" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginEnd="16dp"
+                    android:layout_marginBottom="8dp"
+                    android:text="Tap on the map or use your current location to set the farm location"
+                    android:textColor="#666666"
+                    android:textSize="12sp" />
+
+                <Button
+                    android:id="@+id/addFarmLocationButton"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="16dp"
+                    android:background="@drawable/edit_text_background"
+                    android:text="Use Current Location"
+                    android:textColor="@android:color/white"
+                    android:backgroundTint="@color/colorPrimary" />
+            </LinearLayout>
+        </com.google.android.material.card.MaterialCardView>
+
+        <!-- Document URLs Section -->
+        <TextView
+            android:id="@+id/documentsLabel"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="24dp"
+            android:layout_marginTop="24dp"
+            android:layout_marginEnd="24dp"
+            android:text="Required Documents"
+            android:textStyle="bold"
+            android:textColor="#333333"
+            app:layout_constraintTop_toBottomOf="@id/mapCard" />
+
+        <com.google.android.material.card.MaterialCardView
+            android:id="@+id/documentsCard"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="24dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="24dp"
+            app:cardCornerRadius="8dp"
+            app:cardElevation="2dp"
+            app:layout_constraintTop_toBottomOf="@id/documentsLabel">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="16dp">
+
+                <!-- NIC Documents -->
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="NIC Documents"
+                    android:textStyle="bold"
+                    android:textSize="14sp"
+                    android:textColor="#666666" />
+
+                <EditText
+                    android:id="@+id/nicFrontUrlEditText"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:background="@drawable/edit_text_background"
+                    android:hint="NIC Front Image URL"
+                    android:inputType="textUri"
+                    android:minHeight="48dp" />
+
+                <EditText
+                    android:id="@+id/nicBackUrlEditText"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:background="@drawable/edit_text_background"
+                    android:hint="NIC Back Image URL"
+                    android:inputType="textUri"
+                    android:minHeight="48dp" />
+
+                <!-- Farm Documents -->
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="16dp"
+                    android:text="Buisness Documents"
+                    android:textStyle="bold"
+                    android:textSize="14sp"
+                    android:textColor="#666666" />
+
+                <EditText
+                    android:id="@+id/ownershipDocUrlEditText"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:background="@drawable/edit_text_background"
+                    android:hint="Ownership Document URL"
+                    android:inputType="textUri"
+                    android:minHeight="48dp" />
+
+                <EditText
+                    android:id="@+id/analysisDocUrlEditText"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:background="@drawable/edit_text_background"
+                    android:hint="Buisness Output Record Document URL"
+                    android:inputType="textUri"
+                    android:minHeight="48dp" />
+
+                <EditText
+                    android:id="@+id/soilReportUrlEditText"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:background="@drawable/edit_text_background"
+                    android:hint="Buisness Report Document URL"
+                    android:inputType="textUri"
+                    android:minHeight="48dp" />
+
+                <!-- Farm Images -->
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="16dp"
+                    android:text="Buisness Images"
+                    android:textStyle="bold"
+                    android:textSize="14sp"
+                    android:textColor="#666666" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:orientation="horizontal">
+
+                    <EditText
+                        android:id="@+id/farmImageUrlEditText"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:layout_marginEnd="8dp"
+                        android:background="@drawable/edit_text_background"
+                        android:hint="Buisness Image URL"
+                        android:inputType="textUri"
+                        android:minHeight="48dp" />
+
+                    <Button
+                        android:id="@+id/addFarmImageUrlButton"
+                        android:layout_width="wrap_content"
+                        android:layout_height="48dp"
+                        android:text="Add"
+                        android:textColor="@android:color/white"
+                        android:backgroundTint="@color/colorPrimary" />
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/farmImageUrlsTextView"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:textColor="#666666"
+                    android:textSize="12sp" />
+            </LinearLayout>
+        </com.google.android.material.card.MaterialCardView>
+
+        <!-- Submit Button -->
+        <com.google.android.material.card.MaterialCardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="24dp"
+            android:layout_marginTop="24dp"
+            android:layout_marginEnd="24dp"
+            android:layout_marginBottom="24dp"
+            app:cardCornerRadius="8dp"
+            app:cardElevation="2dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/documentsCard">
+
+            <LinearLayout
+                android:id="@+id/addFarmSubmitButton"
+                android:layout_width="match_parent"
+                android:layout_height="56dp"
+                android:background="@drawable/gradient_green"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="24dp"
+                    android:layout_height="24dp"
+                    android:layout_marginEnd="8dp"
+                    android:src="@android:drawable/ic_menu_save"
+                    android:tint="@android:color/white" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/add_farm_submit"
+                    android:textColor="@android:color/white"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+            </LinearLayout>
+        </com.google.android.material.card.MaterialCardView>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>
+
+
+

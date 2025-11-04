@@ -1,0 +1,249 @@
+<resources>
+    <string name="app_name">Investask</string>
+    <string name="landing_title">Welcome to Investask</string>
+    <string name="landing_description">Invest in thriving buisness or grow your own with ease!</string>
+    <string name="landing_txt1">Register as</string>
+    <string name="my_profile_titlr">My profile</string>
+    <string name="save">Save</string>
+
+    <string name="farmer">Interpeneor</string>
+    <string name="investor">Investor</string>
+    <string name="createAccount">Create Account</string>
+    <string name="farmerSignupTxt">Sign up to connect with investors and grow your buisness!</string>
+
+    <string name="login">Log In</string>
+    <string name="farmerSigninTxt">Welcome back! Sign in to manage your buisness and investments.</string>
+
+    <string name="mobile">Mobile</string>
+    <string name="fname">First Name</string>
+    <string name="lname">Last Name</string>
+    <string name="password">Password</string>
+    <string name="conform_password">Conform Password</string>
+    <string name="sign_up">Sign Up</string>
+    <string name="signup_txt1">Already have an account?</string>
+    <string name="signup_txt2">Sign In</string>
+    <string name="signin_txt1">Dont have an account?</string>
+    <string name="signin_txt2">Sign Up</string>
+    <string name="review">Review</string>
+
+    <string name="mobile_hint">Enter your mobile number</string>
+    <string name="fname_hint">Enter your first name</string>
+    <string name="last_hint">Enter your last name</string>
+    <string name="password_hint">Enter your password</string>
+    <string name="password_conform_hint">Re-type your password</string>
+
+    <string name="investorSignupTxt">Sign up to invest in buisness and enjoy exclusive  returns!</string>
+    <string name="investorSignInTxt">Welcome back! Access your investments and track your returns</string>
+
+    <!--    Farmer Home Fragment-->
+    <string name="letast_notification">Stock price : </string>
+    <string name="test_Risk_Score">85</string>
+    <string name="test_Risk_Score_text">good hands</string>
+    <string name="test_Risk_Score_text_risk">Your buisness is at</string>
+    <string name="test_Risk_Score_text_good">Your buisness is in</string>
+    <string name="risk_score">Risk score</string>
+
+    <string name="test_farm_name">Farm name</string>
+    <string name="test_farm_harvesting">Buisness</string>
+    <string name="farm_total_stock">Total Stock :-</string>
+    <string name="farm_released_stock">Released Stock :-</string>
+    <string name="farm_income">Income :-</string>
+    <string name="test_farm_stock">1000</string>
+    <string name="test_farm__released_stock">500</string>
+    <string name="test_farm_income">Rs.200,000</string>
+    <string name="test_farm_date">05 February 2025</string>
+    <string name="test_farm_stock_progtess">S 250</string>
+    <string name="test_farm_stock_text">Almost there!</string>
+    <string name="test_farm_investors_count">12 Total</string>
+    <string name="farm_investment_progress">Investment Progress</string>
+    <string name="farm_investors">Investors</string>
+    <string name="farm_investor_name">Investor name</string>
+    <string name="farm_stock">Stocks</string>
+    <string name="farm_amount">Amount</string>
+
+    <string name="test_farm_stock_count">100</string>
+    <string name="test_farm_amount">2000</string>
+
+    <!--    Farm farms Fragment-->
+    <string name="farms_search_hint">Search Buisness</string>
+    <string name="farms_title">My Buisnesses</string>
+    <string name="farms_chart_title">Stock Price Trends</string>
+    <string name="farms_chart_title2">(Last 7 Days)</string>
+
+    <!--    Add farm-->
+    <string name="add_farm_title">Add new Buisness</string>
+    <string name="add_farm_farm_name">Enter BUisness name</string>
+    <string name="add_farm_farm_size">Area Size</string>
+    <string name="add_farm_farm_size_hint">2.5 ha</string>
+    <string name="add_farm_avg_income">Avg Yield</string>
+    <string name="add_farm_avg_income_hint">2500 Kg</string>
+    <string name="add_farm_min_stock">Min Invest</string>
+    <string name="add_farm_min_stock_hint">S 10</string>
+    <string name="add_farm_description">Buisness description</string>
+    <string name="add_farm_description_hint">A brief description about your Buisness</string>
+    <string name="add_farm_nic">Owner NIC</string>
+    <string name="add_farm_nic_front">Front</string>
+    <string name="add_farm_nic_back">Back</string>
+    <string name="add_farm_ownership_doc">Buisness ownership document</string>
+    <string name="add_farm_ownership_doc_description">Upload a valid document proving Buisness ownership</string>
+    <string name="add_farm_record_doc">Buisness Output Record</string>
+    <string name="add_farm_record_doc_description">A valid document showing buisness analysis for the last 2 years</string>
+    <string name="add_farm_soil_doc">Buisness Soil Conditions</string>
+    <string name="add_farm_soil_doc_description">A valid soil analysis report obtained within the last 2 weeks</string>
+    <string name="add_farm_soil_doc_description2">Upload valid soil analysis update</string>
+    <string name="add_farm_nic_number">Owner NIC number</string>
+    <string name="add_farm_location">Buisness Location</string>
+    <string name="add_farm_media">Media</string>
+    <string name="add_farm_submit">Submit</string>
+    <string name="add_farm_code_name">Code Name</string>
+    <string name="add_farm_save_soil">Submit</string>
+    <string name="add_farm_code_name_description">Unique name for your Buisness</string>
+
+    <!--    farmer profile-->
+    <string name="farmer_profile_titlr">My profile</string>
+
+    <!--    farmer risk review-->
+    <string name="farmer_risk_review_title">Risk review</string>
+    <string name="farmer_risk_review_weather">Weather risk score</string>
+    <string name="farmer_risk_review_weather_text">Last 7 days</string>
+    <string name="farmer_risk_review_soil">stoke risk score</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="title_activity_investor_main">InvestorMainActivity</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Android Studio</string>
+    <string name="nav_header_subtitle">android.studio@android.com</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">Settings</string>
+
+    <string name="menu_home">Home</string>
+    <string name="menu_gallery">Gallery</string>
+    <string name="menu_slideshow">Slideshow</string>
+
+    <string name="open_drawer">Open Drawer</string>
+    <string name="close_drawer">Close Drawer</string>
+
+    <!--    Investor Home-->
+    <string name="investor_home_1">Hi,</string>
+    <string name="investor_home_2">Fname</string>
+    <string name="investor_home_3">Have a grate day!</string>
+    <string name="investor_home_4">Today\'s Hot</string>
+    <string name="investor_home_5">Stock Holding</string>
+    <string name="investor_home_6">+2.5%</string>
+    <string name="investor_home_7">DRGF</string>
+    <string name="investor_home_8">Rs.150</string>
+    <string name="investor_home_9">Popular</string>
+    <string name="investor_home_10">Fname Lname</string>
+    <string name="investor_home_11">Total Shares</string>
+    <string name="investor_home_12">Total Returns</string>
+    <string name="investor_home_13">Stock Allocation</string>
+    <string name="investor_home_14">Amount</string>
+    <string name="investor_home_15">Rs. 250,000 .00</string>
+    <string name="investor_home_16">Upcoming Payouts</string>
+    <string name="investor_home_17">Stoke</string>
+    <string name="investor_home_18">Cash</string>
+    <string name="investor_home_19">May 1, 2025</string>
+    <string name="investor_home_20">Buisness Name</string>
+    <string name="investor_home_21">S 2500</string>
+
+    <!--    Investor farms-->
+    <string name="i_farms_1">Search for Buisness</string>
+    <string name="i_farms_2">ADFR</string>
+    <string name="i_farms_3">Stoke</string>
+    <string name="i_farms_4">Rs.250.00</string>
+
+    <!--    Investor Single Farm-->
+    <string name="i_single_farm_1">FRTY</string>
+    <string name="i_single_farm_2">Farm Name</string>
+    <string name="i_single_farm_3">Rs.</string>
+    <string name="i_single_farm_4">278</string>
+    <string name="i_single_farm_5">.95</string>
+    <string name="i_single_farm_6">Rs.1.35 (2.51%)</string>
+    <string name="i_single_farm_7">Today</string>
+    <string name="i_single_farm_8">1 WEEK</string>
+    <string name="i_single_farm_9">1 MONTH</string>
+    <string name="i_single_farm_10">SEASON</string>
+    <string name="i_single_farm_11">Avg income</string>
+    <string name="i_single_farm_12">Rs.280,000.00</string>
+    <string name="i_single_farm_13">Risk score</string>
+    <string name="i_single_farm_14">Owner Name</string>
+    <string name="i_single_farm_15">40 years old</string>
+    <string name="i_single_farm_16">Land Size :</string>
+    <string name="i_single_farm_17">Avg Yield :</string>
+    <string name="i_single_farm_18">Current Season</string>
+    <string name="i_single_farm_19">Jan - May</string>
+    <string name="i_single_farm_20">2.5 ha</string>
+    <string name="i_single_farm_21">2500 kg</string>
+    <string name="i_single_farm_22">Images</string>
+    <string name="i_single_farm_23">Invest</string>
+    <string name="i_single_farm_24">Buy Stock</string>
+    <string name="i_single_farm_25">S 235</string>
+    <string name="i_single_farm_26">My Investment</string>
+    <string name="i_single_farm_27">25% of Shares</string>
+    <string name="i_single_farm_28">Expected income :</string>
+    <string name="i_single_farm_29">Rs. 250,000</string>
+    <string name="i_single_farm_30">Buy More</string>
+
+    <!--    Buy Stock-->
+    <string name="i_buy_1">Buy Stoke</string>
+    <string name="i_buy_2">Buisness name  :</string>
+    <string name="i_buy_3">Rs.134 / Stock</string>
+    <string name="i_buy_4">No. of Stocks</string>
+    <string name="i_buy_5">No. of Stocks</string>
+    <string name="i_buy_6">Total</string>
+    <string name="i_buy_7">Rs. 0 .00</string>
+    <string name="i_buy_8">Buy Now</string>
+    <string name="i_buy_9">10</string>
+
+    <!--    Investor transactions-->
+    <string name="i_transactions_1">Buisness Name</string>
+    <string name="i_transactions_2">Transactions</string>
+    <string name="i_transactions_3">Today</string>
+    <string name="i_transactions_4">Buisness Name</string>
+    <string name="i_transactions_5">Invest</string>
+    <string name="i_transactions_6">-13,000.00 RS</string>
+    <string name="i_transactions_7">20:45</string>
+    <string name="i_transactions_8">Old</string>
+    <string name="i_transactions_9">Explore Profitable Buisnessman</string>
+    <string name="i_transactions_10">Save</string>
+
+    <string name="f_addf_1">Stoke conditions</string>
+    <string name="f_addf_2">Stoke pH (Score)</string>
+    <string name="f_addf_3">Stoke Content (%)</string>
+    <string name="f_addf_4">Stoke rate (%)</string>
+    <string name="f_addf_5">Stoke Level (Score)</string>
+    <string name="f_addf_6">Add location</string>
+
+    <string name="f_home_1">Stock release</string>
+    <string name="f_home_2">Total stock</string>
+    <string name="f_home_3">Released stock</string>
+    <string name="f_home_4">S 1000</string>
+    <string name="f_home_5">S 500</string>
+    <string name="f_home_6">Release</string>
+    <string name="f_home_7">Start this season</string>
+    <string name="f_home_8">Start date</string>
+    <string name="f_home_9">End date</string>
+    <string name="f_home_10">Start</string>
+    <string name="f_home_11">Rs. 100 .00</string>
+    <string name="f_home_12">Investask</string>
+    <string name="f_home_13">Return type</string>
+
+    <string name="invoice_1">Invoice</string>
+    <string name="invoice_2">#123342312</string>
+    <string name="invoice_3">24 Jan, 2025</string>
+    <string name="invoice_4">Print</string>
+
+    <string name="noti_1">Notification</string>
+    <string name="noti_2">Title</string>
+
+    <string name="verify_1">Human Verification</string>
+    <string name="verify_2">Cover your phone\'s light sensor to verify you are human</string>
+    <string name="verify_3">Let\'s start</string>
+
+    <string name="farmer_buy_3">Rs. 0 .00</string>
+    <string name="farmer_buy_4">Make payment</string>
+    <string name="farmer_buy_5">You must deliver  to investors within 365 days for buisnessman returns</string>
+
+
+</resources>

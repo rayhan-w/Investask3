@@ -1,0 +1,39 @@
+---------------------------- PROCESS ENDED (9075) for package com.kavindu.farmshare ----------------------------
+---------------------------- PROCESS STARTED (9359) for package com.kavindu.farmshare ----------------------------
+2025-11-01 19:00:51.213  9359-9359  AndroidRuntime          com.kavindu.farmshare                E  FATAL EXCEPTION: main (Ask Gemini)
+                                                                                                    Process: com.kavindu.farmshare, PID: 9359
+                                                                                                    java.lang.NullPointerException: Attempt to read from field 'double com.google.android.gms.maps.model.LatLng.latitude' on a null object reference in method 'void com.kavindu.farmshare.farmer.FarmerAddFarmActivity.saveFarmToFirestore()'
+                                                                                                    	at com.kavindu.farmshare.farmer.FarmerAddFarmActivity.saveFarmToFirestore(FarmerAddFarmActivity.java:361)
+                                                                                                    	at com.kavindu.farmshare.farmer.FarmerAddFarmActivity.validateAndSubmitFarm(FarmerAddFarmActivity.java:306)
+                                                                                                    	at com.kavindu.farmshare.farmer.FarmerAddFarmActivity.lambda$setupSubmitButton$3$com-kavindu-farmshare-farmer-FarmerAddFarmActivity(FarmerAddFarmActivity.java:260)
+                                                                                                    	at com.kavindu.farmshare.farmer.FarmerAddFarmActivity$$ExternalSyntheticLambda8.onClick(D8$$SyntheticClass:0)
+                                                                                                    	at android.view.View.performClick(View.java:8083)
+                                                                                                    	at android.view.View.performClickInternal(View.java:8060)
+                                                                                                    	at android.view.View.-$$Nest$mperformClickInternal(Unknown Source:0)
+                                                                                                    	at android.view.View$PerformClick.run(View.java:31549)
+                                                                                                    	at android.os.Handler.handleCallback(Handler.java:995)
+                                                                                                    	at android.os.Handler.dispatchMessage(Handler.java:103)
+                                                                                                    	at android.os.Looper.loopOnce(Looper.java:248)
+                                                                                                    	at android.os.Looper.loop(Looper.java:338)
+                                                                                                    	at android.app.ActivityThread.main(ActivityThread.java:9067)
+                                                                                                    	at java.lang.reflect.Method.invoke(Native Method)
+                                                                                                    	at com.android.internal.os.RuntimeInit$MethodAndArgsCaller.run(RuntimeInit.java:593)
+                                                                                                    	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:932)
+---------------------------- PROCESS ENDED (9359) for package com.kavindu.farmshare ----------------------------
+---------------------------- PROCESS STARTED (9521) for package com.kavindu.farmshare ----------------------------
+2025-11-01 19:00:53.527  9521-9521  AndroidRuntime          com.kavindu.farmshare                E  FATAL EXCEPTION: main (Ask Gemini)
+                                                                                                    Process: com.kavindu.farmshare, PID: 9521
+                                                                                                    java.lang.IllegalStateException: Fragment FarmerHomeFragment{956147c} (57f5d78e-4769-48fb-89c1-5e8f77a589aa) not attached to Activity
+                                                                                                    	at androidx.fragment.app.Fragment.startActivity(Fragment.java:1446)
+                                                                                                    	at androidx.fragment.app.Fragment.startActivity(Fragment.java:1436)
+                                                                                                    	at com.kavindu.farmshare.farmer.FarmerHomeFragment.lambda$onCreateView$2$com-kavindu-farmshare-farmer-FarmerHomeFragment(FarmerHomeFragment.java:403)
+                                                                                                    	at com.kavindu.farmshare.farmer.FarmerHomeFragment$$ExternalSyntheticLambda3.onComplete(D8$$SyntheticClass:0)
+                                                                                                    	at com.google.android.gms.tasks.zzi.run(com.google.android.gms:play-services-tasks@@18.1.0:1)
+                                                                                                    	at android.os.Handler.handleCallback(Handler.java:995)
+                                                                                                    	at android.os.Handler.dispatchMessage(Handler.java:103)
+                                                                                                    	at android.os.Looper.loopOnce(Looper.java:248)
+                                                                                                    	at android.os.Looper.loop(Looper.java:338)
+                                                                                                    	at android.app.ActivityThread.main(ActivityThread.java:9067)
+                                                                                                    	at java.lang.reflect.Method.invoke(Native Method)
+                                                                                                    	at com.android.internal.os.RuntimeInit$MethodAndArgsCaller.run(RuntimeInit.java:593)
+                                                                                                    	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:932)
